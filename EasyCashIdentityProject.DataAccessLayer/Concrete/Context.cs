@@ -16,7 +16,6 @@ namespace EasyCashIdentityProject.DataAccessLayer.Concrete
         {
             optionsBuilder.UseMySql("server=192.168.1.10;port=3306;database=EasyCashDb;user=root;password=beeNEO!34680", new MySqlServerVersion(new Version(8, 0, 31)));
         }
-
         public DbSet<CustomerAccount> CustomerAccounts { get; set; }
         public DbSet<CustomerAccountProcess> CustomerAccountProcesses { get; set; } 
     }
