@@ -63,6 +63,9 @@ namespace EasyCashIdentityProject.DataAccessLayer.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("longtext");
 
+                    b.Property<int>("ConfirmCode")
+                        .HasColumnType("int");
+
                     b.Property<string>("District")
                         .IsRequired()
                         .HasColumnType("longtext");
